@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: aliceblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        nav {
+            float: left;
+            background-color: #ccc;
+            padding: 20px;
+            height: 300px;
+            width: 30%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        article {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            height: 300px;
+            width: 70%;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        C0624L1-WF101
+    </h1>
+</header>
+    <section>
+        <nav>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Lesson 07: CSS Layout</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </article>
+    </section>
+    <footer>
+        &copy; 2024 CodeGym.
+    </footer>
+</body>
+</html>

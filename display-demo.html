@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Demo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .hidden-block {
+            display: block;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav ul.main-menu > li {
+            float: left;
+            color: white;
+        }
+
+        nav ul.main-menu > li > a {
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: red;
+        }
+
+        .sub-menu {
+            display: none;
+        }
+        .menu-parent {
+            position: relative;
+        }
+        .menu-parent:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 300px;
+            background-color: #333333;
+        }
+
+        .sub-menu > li {
+            display: block;
+            width: 100%;
+        }
+
+        .sub-menu > li > a {
+            width: 100%;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li class="menu-parent">
+                <a href="#js">Javascript</a>
+                <ul class="sub-menu">
+                    <li><a href="#loop">Loops</a></li>
+                    <li><a href="#array">Arrays</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1>Display demo</h1>
+    <p><strong style="background-color: red">Lorem Ipsum</strong> is simply dummy text of the <span style="background-color: yellow">printing</span> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <a href="#">Nhấp vào đây</a></p>
+    <h2 class="hidden-block">Display none</h2>
+
+</div>
+</body>
+</html>
